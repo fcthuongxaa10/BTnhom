@@ -18,7 +18,7 @@ p{
     padding: 0;
     font-size: 1.2em;
     line-height: 28px;
-    color: #696969;
+    color: #afafaf;
     font-family: 'Jost', sans-serif;
 }
 .container{
@@ -611,6 +611,7 @@ p{
 }
 .stay form.subscribe-wthree button{
     flex-basis: 27%;
+    font-family: 'Jost', sans-serif;
 }
 .stay__btn{
     padding: 12px 35px;
@@ -742,6 +743,7 @@ p{
             
 
             /* Change-Color */
+                /* dark Plans */
 body[data-mode="dark"]{
     background-color: #000;
 }
@@ -763,4 +765,41 @@ body[data-mode="dark"] .content__top h6{
 body[data-mode="dark"] .bottom__bottom ul li p{
     color: #888888;
 }
+        /* end dark plans */
+        /* dark better */
+body[data-mode="dark"] .better{
+    background-color: #151515;
+}
+     /*  end dark better */
+            /* dark testi */
+body[data-mode="dark"] .testi{
+    background-color: #222222;
+}
+body[data-mode="dark"] .testi .testimonial{
+    background: #151515;
+}
+body[data-mode="dark"] .peopl h3{
+    color: #DDDDDD;
+}
+                /* End dark testi */
+                     /* dark Stay */
+body[data-mode="dark"] .stay{
+    background-color: #151515;
+}
+body[data-mode="dark"] .stay h3{
+    color: #DDDDDD;
+}
+body[data-mode="dark"] .stay p{
+    color: #afafaf;
+}
+            /* End dark stay  */
+                    /* dark footer */
+body[data-mode="dark"] .footer-list-28 ul li p, .footer-list-28 ul li a {
+        color: #afafaf;
+}
+body[data-mode="dark"] .footer__bottom p {
+    color: #afafaf;
+}
+                /* end dark footer */
+
 
