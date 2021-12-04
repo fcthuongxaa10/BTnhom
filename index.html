@@ -30,7 +30,8 @@
     <link rel="stylesheet" href="./css/magnific-popup.css">
 </head>
 
-<body>
+<body data-mode="light">
+    <button onclick="changeColor()" class="change-Color">Đổi màu</button>
     <!-- Plans -->
     <section class="plans py-5" id="plans__plans">
         <div class="plans__content pt-lg-4 pt-md-3 pb-lg-5 pb-md-4">
@@ -175,15 +176,12 @@
                     <div class="better__between mt-5">
                         <div class="better__img">
                             <img src="./img/banner2.jpg" class="img__radius img__fluid" alt="#">
-                            <a href="#open-popup" class="text-center play__view">
-                                <button id="open-popup">
-                                    <span class="video-play-icon">
-                                        <span class="fa fa-play better__play">
-                                        </span>
+                            <a id="popup-youtube" class="text-center play__view" href="https://player.vimeo.com/video/101587706"><button id="open-popup">
+                                <span class="video-play-icon">
+                                    <span class="fa fa-play better__play">
                                     </span>
-                                </button>
-                            </a>
-
+                                </span>
+                            </button></a>
                             <div id="my-popup" class="mfp-hide white-popup">
 
                             </div>
@@ -549,22 +547,33 @@
 
     <!-- Iframe -->
     <script>
-        $('#open-popup').magnificPopup({
-            items: [
-                {
-                    src: 'https://player.vimeo.com/video/101587706',
-                    type: 'iframe' // this overrides default type
-                },
-            ],
-            gallery: {
-                enabled: true
-            },
-            type: 'image' // this is a default type
-        });
+         $('#popup-youtube, #open-popup').magnificPopup({
+        disableOn: 700,
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+
+        fixedContentPos: false
+    });
+        // $('#open-popup').magnificPopup({
+        //     items: [
+        //         {
+        //             src: 'https://player.vimeo.com/video/101587706',
+        //             type: 'iframe' // this overrides default type
+        //         },
+        //     ],
+        //     gallery: {
+        //         enabled: true
+        //     },
+        //     type: 'image' // this is a default type
+        // });
     </script>
     <!-- backtotop -->
     <script src="./js/main.js"></script>
     <script src="./js/util.js"></script>
+    <script src="./js/changeColor.js"></script>
+
 
 
 

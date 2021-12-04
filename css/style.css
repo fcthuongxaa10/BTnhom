@@ -45,6 +45,7 @@ p{
       margin-right: auto;
       margin-left: auto;
     }
+ 
 }
   
 @media (min-width: 1200px){
@@ -162,6 +163,7 @@ p{
     padding: 3.5em 2.5em;
     border-left: 0;
 }
+
 .plans  .gird__between{
     transform: scale(1.03);
     -webkit-transform: scale(1.03);
@@ -256,10 +258,15 @@ p{
            
     .plans .gird__itemleft{
     border: 1px solid #f0f3f0;
+    
     }
               
     .plans .gird__itemright{
     border: 1px solid #f0f3f0;
+    
+    }
+    .plans .gird__between{
+        margin: 0 5px;
     }
               
     .plans .pricing-sec-7{
@@ -400,6 +407,7 @@ p{
         line-height: 40px;
     }
 }
+
 @media (max-width: 600px){
     .better .h3__repons{
         font-size: 32px !important;
@@ -497,7 +505,7 @@ p{
     -webkit-touch-callout: none;
 }
 .item{
-    width: 515px;
+    width: 100%;
     margin-right: 20px;
 }
 
@@ -521,6 +529,7 @@ p{
   width: 30px;
   height: 10px;
 }
+
 @media (max-width: 600px){
     .testi .h3__repons{
         font-size: 32px !important;
@@ -538,7 +547,12 @@ p{
     }
 
 }
-
+@media (max-width: 992px){
+       
+    .owl-stage .owl-item .item{
+        width: 100%;
+    }
+}
             /* end- testi */
             /* Stay */
 .stay h3{
@@ -725,3 +739,28 @@ p{
             /* End - footer */
 
         /* Responsive */
+            
+
+            /* Change-Color */
+body[data-mode="dark"]{
+    background-color: #000;
+}
+
+body[data-mode="dark"] .plans{
+    background-color: #222222;
+}
+body[data-mode="dark"] .h3__repons{
+    color: #DDDDDD;
+}
+body[data-mode="dark"] .gird__item{
+        background-color: #151515;
+        border-radius: 6px;
+        align-self: center;
+}
+body[data-mode="dark"] .content__top h6{
+    color: #DDDDDD;
+}
+body[data-mode="dark"] .bottom__bottom ul li p{
+    color: #888888;
+}
+
