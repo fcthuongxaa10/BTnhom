@@ -813,7 +813,7 @@ html {
     opacity: 0.8;
 }
 
-.footer #backtotop {
+.footer #btn-backtotop{
     position: fixed;
     bottom: 90px;
     right: 15px;
@@ -831,14 +831,12 @@ html {
     border-radius: 50px;
     transition: 0.3s ease-out;
 }
-
-.footer #backtotop:hover {
+.footer #btn-backtotop:hover{
     transform: translate3d(0, -5px, 0);
     -webkit-transform: translate3d(0, -5px, 0);
     transition: 0.3s ease-out;
 }
-
-.footer .backtotop {
+.footer .btn-backtotop{
     display: block;
 }
 
