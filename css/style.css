@@ -39,15 +39,30 @@ html {
     color: var(--font-color);
 }
 
-
-/*--------------------------------------------------------*/
-
-.container {
+.container-fluid {
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    padding-top: 50px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar .navbar-brand {
+    color: #239f4f;
+}
+
+.navbar-brand {
+    font-size: 34px;
+    font-weight: 600;
+    padding-left: 160px;
+}
+
+.nav-link {
+    text-transform: capitalize;
+    transition: all 0.5s;
+    font-weight: 400;
+    font-size: 1.2em;
+    padding: 14px 20px;
+    color: #000;
 }
 
 .row {
@@ -60,6 +75,44 @@ html {
 .text-center {
     text-align: center !important;
 }
+
+.container-fluid .active .nav-link {
+    color: #239f4f;
+}
+
+#navbarTogglerDemo02 .nav-item::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: #239f4f;
+    transition: all .5s;
+}
+
+.container-fluid .nav-link:hover,
+.container-fluid .dropdown-item span:hover {
+    color: #239f4f;
+    background-color: #fff;
+}
+
+.container-fluid .nav-item:hover::after {
+    width: 100%;
+}
+
+.container-fluid {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+
+.container-fluid .nav-item .active::after {
+    width: 100%;
+}
+
+
+/*--------------------------------------------------------*/
 
 @media (min-width: 992px) {
     .container {
@@ -813,7 +866,7 @@ html {
     opacity: 0.8;
 }
 
-.footer #btn-backtotop{
+.footer #btn-backtotop {
     position: fixed;
     bottom: 90px;
     right: 15px;
@@ -831,12 +884,14 @@ html {
     border-radius: 50px;
     transition: 0.3s ease-out;
 }
-.footer #btn-backtotop:hover{
+
+.footer #btn-backtotop:hover {
     transform: translate3d(0, -5px, 0);
     -webkit-transform: translate3d(0, -5px, 0);
     transition: 0.3s ease-out;
 }
-.footer .btn-backtotop{
+
+.footer .btn-backtotop {
     display: block;
 }
 
